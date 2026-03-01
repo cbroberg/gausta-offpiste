@@ -107,7 +107,7 @@
       <div class="leg"><div class="sw" style="background:#22d3ee"></div> Din nedkørsel</div>
       <div class="leg"><div class="sw" style="background:#f97316"></div> Lift/op</div>
       <div class="leg" style="gap:4px"><div style="width:13px;border-top:3px dashed #f59e0b"></div> Off-piste ud</div>
-      <div class="leg" style="gap:4px"><div style="width:13px;border-top:3px solid #22d3ee"></div> Hjem-rute P22</div>
+      <div class="leg" style="gap:4px"><div style="width:13px;border-top:3px dashed #a78bfa"></div> Hjem-rute P22</div>
       <div class="leg">🏠 Brendstaultunet 5</div>
     </div>
 
@@ -322,7 +322,7 @@ ROUTES.forEach((r,i)=>{
 
 // Return route: piste 22 from Brendstaulheisen top → near house
 const returnLine=L.polyline(RETURN_ROUTE,{
-  color:'#22d3ee',weight:4,opacity:.95
+  color:'#a78bfa',weight:3,dashArray:'10,6',opacity:.95
 }).bindPopup('<b>Hjem-rute: Piste 22</b><br>Fra Brendstaulheisen (H) top<br>Til 277m fra Brendstaultunet 5<br>Sværhed: begynder ✅').addTo(grps.return);
 
 // Marker at lift top
